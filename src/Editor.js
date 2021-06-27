@@ -3,7 +3,7 @@ import AceEditor from "react-ace";
 import "ace-builds/src-min-noconflict/ext-language_tools";
 import "ace-builds/src-noconflict/mode-xml";
 import "ace-builds/src-noconflict/snippets/xml";
-import "ace-builds/src-noconflict/theme-github";
+import "ace-builds/src-noconflict/theme-tomorrow";
 
 import { ThemeContext } from "./Contexts/ThemeContext";
 import "./Editor.css";
@@ -116,6 +116,8 @@ const Editor = () => {
               color: theme.syntax,
             }}
             mode="xml"
+            theme="tomorrow"
+            highlightActiveLine={false}
             id="codeSnippet"
             value={editorCode}
             onChange={onChange}
