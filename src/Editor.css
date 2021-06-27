@@ -1,39 +1,111 @@
-.editor{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
+@media screen and (min-width: 601px) {
+
+    .editor{
+        display: flex;
+        flex-direction: column;
+        height: 85vh;
+        width: 100vw;
+    }
+    
+    .editor__body{
+        display: flex;
+        justify-content:space-around;
+    
+    }
+    .editor__output{
+        height: 85vh;
+    }
+    .editor__output>*{
+        width: 48vw;
+        flex: 1;
+        border: 0.1rem solid #ccc;
+        height: 85vh;
+        margin-top: 10px;
+    }
+    
+    .editor__aceEditor>*{
+        flex: 1;
+        border: 0.1rem solid #ccc;    
+        min-width: 48vw;
+        margin-top: 10px;
+    }
+    .editor__aceEditor{
+        height: 85vh;
+    }
+    .editor__navbar{
+        background-color: beige;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .editor__navbar>button{
+        background-color: black;
+        color: whitesmoke;
+        font-size: large;
+        font-weight: 400;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px;
+    }
 }
 
-.editor__body{
-    display: flex;
-    justify-content:space-between;
+@media screen and (max-width: 600px) {
+    .editor{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+        width: 96vw;
+    }
+    
+    .editor__body{
+        display: flex;
+        flex-direction: column;   
+        justify-content:space-around;
+    }
+    .editor__output{
+        height: 85vh;
+    }
+    .editor__output>*{
+        width: 90vw;
+        flex: 1;
+        border: 0.1rem solid #ccc;
+        height: 85vh;
+        margin-top: 10px;
+    }
+    
+    .editor__aceEditor>*{
+        flex: 1;
+        border: 0.1rem solid #ccc;
+      
+        min-width: 50vw;
+        margin-top: 10px;
+    }
+    .editor__aceEditor{
+        height: 85vh;
+    }
 
-}
-.editor__output>*{
-    width: 50vw;
-    height: 85vh;
-    margin: 10px;
-}
-
-.editor__aceEditor{
-    flex: 1;
-    border: 0.1rem solid #ccc;
-    min-height: 80vh;
-    margin-right: 0.5rem;
-}
-.editor__navbar{
-    background-color: beige;
-}
-.editor__navbar>button{
-    background-color: black;
-    color: whitesmoke;
-    font-size: large;
-    font-weight: 400;
-    padding: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 10px;
-}
+    .editor__navbar{
+        background-color: beige;
+        width: 96vw;
+        margin-left: 7px;
+        display: flex;
+        align-items: center;
+       
+    }
+    .editor__navbar>button{
+        background-color: black;
+        color: whitesmoke;
+        font-size: large;
+        font-weight: 400;
+        padding: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+        margin: 10px;
+    }
+    
+  }

@@ -74,6 +74,7 @@ const Editor = () => {
       <div className="editor__navbar">
         <button onClick={run}>Run</button>
         <button onClick={TextFile}>Save</button>
+        
       </div>
       <div className="editor__body">
         <div className="editor__aceEditor">
